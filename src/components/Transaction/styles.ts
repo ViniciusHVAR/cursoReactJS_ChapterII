@@ -21,11 +21,17 @@ export const Container = styled.div`
       background: var(--shape);
       color: var(--text-body);
       font-weight: 400;
-
-      border-radius: 0.5rem;
+      border-color: 1px solid red;
 
       &:first-child {
         color: var(--text-title);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
       }
 
       &.deposit {
